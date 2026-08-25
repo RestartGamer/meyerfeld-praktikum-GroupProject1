@@ -49,7 +49,26 @@
                         </a>
                     </li>
                 </ul>
+                <input type="checkbox" id="ham-toggle" class="ham-toggle">
+
+                <label for="ham-toggle" class="ham-btn-mobile">
+                    <picture>
+                        <source srcset="./assets/default/hamburgerIcon.webp">
+                        <img src="./assets/fallback/hamburgerIcon.png" alt="Menu">
+                    </picture>
+                </label>
+                <div class="ham-btn-mobile__dropdown-container">
+                    <ul class="ham-btn-mobile__dropdown">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./ourStory.html">Our Story</a></li>
+                        <li><a href="./contactUs.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+
+
             </div>
+
         </nav>
 
     </header>
@@ -59,16 +78,17 @@
             <article>
                 <div class="section-hero__text-container">
                     <h1>HabitFlow</h1>
-                    <p>Track your routines, monitor your progress, and stay motivated with streaks, reminders, and clear
-                        statistics—all in one simple habit tracker.</p>
+                    <p>Track your routines, monitor your progress, and stay motivated with streaks, reminders, rewards,
+                        and clear statistics. HabitFlow helps you stay consistent, understand your progress, and build
+                        better habits—all in one simple and easy-to-use habit tracker.</p>
                     <button id="download-button" type="button" onclick="alert('Thank you for downloading HabitFlow!')">
                         <span>Download for Windows</span>
                     </button>
                 </div>
                 <picture>
                     <source srcset="./assets/default/mainProductImage.webp">
-                    <img src="./assets/fallback/mainProductImage.png" alt="picture of the HabitFlow app on a smartphone"
-                        width="236px" height="auto">
+                    <img src="./assets/fallback/mainProductImage.png"
+                        alt="picture of the HabitFlow app on a smartphone">
                 </picture>
             </article>
 
@@ -80,8 +100,7 @@
                 <article>
                     <picture>
                         <source srcset="./assets/default/featureIconTasks.webp">
-                        <img src="./assets/fallback/featureIconTasks.png" alt="icon of notepad" width="86px"
-                            height="auto">
+                        <img src="./assets/fallback/featureIconTasks.png" alt="icon of notepad">
                     </picture>
                     <h3>
                         Habits & Tasks
@@ -93,8 +112,7 @@
                 <article>
                     <picture>
                         <source srcset="./assets/default/featureIconStatistics.webp">
-                        <img src="./assets/fallback/featureIconStatistics.png" alt="icon of notepad" width="86px"
-                            height="auto">
+                        <img src="./assets/fallback/featureIconStatistics.png" alt="icon of notepad">
                     </picture>
                     <h3>
                         Statistics
@@ -106,8 +124,7 @@
                 <article>
                     <picture>
                         <source srcset="./assets/default/featureIconStreak.webp">
-                        <img src="./assets/fallback/featureIconStreak.png" alt="icon of notepad" width="86px"
-                            height="auto">
+                        <img src="./assets/fallback/featureIconStreak.png" alt="icon of notepad">
                     </picture>
                     <h3>
                         Reward System
@@ -119,8 +136,7 @@
                 <article>
                     <picture>
                         <source srcset="./assets/default/featureIconNotifications.webp">
-                        <img src="./assets/fallback/featureIconNotifications.png" alt="icon of notepad" width="86px"
-                            height="auto">
+                        <img src="./assets/fallback/featureIconNotifications.png" alt="icon of notepad">
                     </picture>
                     <h3>
                         Notifications
@@ -154,7 +170,7 @@
             </article>
         </section>
     </main>
-    
+
     <footer>
         <span>Copyright ™</span>
     </footer>
