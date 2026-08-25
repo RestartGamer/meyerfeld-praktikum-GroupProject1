@@ -46,6 +46,7 @@ a {
 
     --fontsize-card-h: 24px;
     --fontsize-card-p: 18px;
+    --fontsize-button: 18px;
     --fontsize-footer-small: 12px;
     --fontsize-secondary: 18px;
     --fontsize-header: 24px;
@@ -95,6 +96,7 @@ header {
 }
 
 nav {
+    --padding-inline: 5vw;
     width: 100%;
 
     display: flex;
@@ -102,12 +104,14 @@ nav {
     align-items: center;
 
     border-bottom: 2px solid white;
-
+    padding-inline: var(--padding-inline);
+    padding-block: 20px;
     position: relative;
+    box-sizing: border-box;
 }
 
 .nav-content {
-    --padding-inline: 5vw;
+
 
     width: 100%;
     height: fit-content;
@@ -116,16 +120,16 @@ nav {
     justify-content: space-between;
     align-items: center;
 
-    padding-inline: var(--padding-inline);
-    padding-block: 10px;
 
-    box-sizing: border-box;
+
+    
 }
 
 .nav-content picture,
 .nav-content img {
-    max-width: 160px;
+    max-width: 210px;
     height: auto;
+    border-radius: 10px;
 }
 
 .nav-content__options {
@@ -250,13 +254,11 @@ nav {
         display: inline-flex;
     }
 
-    .ham-toggle:checked ~ .ham-btn-mobile__dropdown-container {
+    .ham-toggle:checked~.ham-btn-mobile__dropdown-container {
         pointer-events: auto;
     }
 
-    .ham-toggle:checked
-    ~ .ham-btn-mobile__dropdown-container
-    .ham-btn-mobile__dropdown {
+    .ham-toggle:checked~.ham-btn-mobile__dropdown-container .ham-btn-mobile__dropdown {
 
         transform: translateY(0);
     }
@@ -280,7 +282,7 @@ main {
     background-color: var(--bgcolor-dark);
 
     padding-inline: var(--padding-inline);
-    padding-block: 38px;
+    padding-block: 78px;
 
     box-sizing: border-box;
 }
@@ -309,7 +311,7 @@ main {
     align-items: flex-start;
     justify-content: center;
 
-    row-gap: 16px;
+    row-gap: 20px;
 }
 
 .section-hero article picture,
@@ -331,6 +333,7 @@ main {
 .section-hero__text-container p {
     font-size: var(--fontsize-secondary);
     font-weight: var(--fontweight-regular);
+    margin-bottom: 20px;
 }
 
 
@@ -346,11 +349,17 @@ main {
     background-color: var(--btncolor-blue);
 
     padding-inline: 32px;
-    padding-block: 5px;
+    padding-block: 10px;
 
     border-radius: 4px;
 
     border: 2px solid white;
+}
+
+#download-button span {
+    font-family: 'inter', sans-serif;
+    font-size: var(--fontsize-button);
+    color: var(--fontcolor-secondary);
 }
 
 #download-button:hover {
