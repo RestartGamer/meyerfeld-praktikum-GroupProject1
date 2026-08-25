@@ -73,7 +73,7 @@ body {
     width: 100%;
     max-width: 1205px;
     min-width: 627px;
-    border: 1px solid black;
+    outline: 1px solid black;
     position: relative;
     margin-inline: auto;
 }
@@ -92,7 +92,6 @@ header {
 
     background-color: var(--bgcolor-dark);
 
-    z-index: 1000;
 }
 
 nav {
@@ -205,10 +204,6 @@ nav {
 .ham-btn-mobile__dropdown-container {
     position: absolute;
 
-    /*
-        This automatically starts at the actual
-        bottom edge of the navbar.
-    */
     top: 100%;
     right: 0;
 
