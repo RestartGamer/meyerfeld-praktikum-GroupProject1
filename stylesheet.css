@@ -54,6 +54,7 @@ body {
     width: 100%;
     max-width: 1205px;
     min-width: 627px;
+    border: 1px solid black;
 }
 
 nav {
@@ -117,6 +118,7 @@ main {
     align-items: center;
     gap: 28px;
     color: var(--fontcolor-hero);
+    min-width: 600px;
 }
 
 .section-hero article picture,
