@@ -26,6 +26,7 @@ span {
     --btncolor-blue-active: #153870;
 
     --fontsize-card-p: 12px;
+    --fontsize-footer-small: 12px;
     --fontsize-secondary: 18px;
     --fontsize-header: 24px;
     --fontsize-heading: 24px;
@@ -280,4 +281,19 @@ main {
 .section-cta__text-container p {
     font-size: var(--fontsize-secondary);
     font-weight: var(--fontweight-regular);
+}
+
+footer {
+    width: 100%;
+    padding-block: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bgcolor-dark);
+}
+
+footer span {
+    color: var(--fontcolor-secondary);
+    font-size: var(--fontsize-footer-small);
+    font-weight: var(--fontweight-light);
 }
