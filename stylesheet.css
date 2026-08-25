@@ -13,6 +13,7 @@ span {
     --bgcolor-dark: #1F2937;
     --bgcolor-quote: #E5E7EB;
     --bgcolor-blue: #3882F6;
+    --bgcolor-default: white;
 
     --fontcolor-primary: black;
     --fontcolor-secondary: #E5E7EB;
@@ -48,6 +49,7 @@ picture {
 html {
     display: flex;
     justify-content: center;
+    background-image: url("./assets/bgpattern.png")
 }
 
 body {
@@ -174,6 +176,8 @@ main {
     padding-top: 47px;
     padding-bottom: 73px;
     row-gap: 22px;
+
+    background-color: var(--bgcolor-default);
 }
 
 .section-features__content {
@@ -248,6 +252,8 @@ main {
     padding-inline: 71px;
     padding-block: 52px;
     box-sizing: border-box;
+
+    background-color: var(--bgcolor-default);
 }
 
 .section-cta article {
