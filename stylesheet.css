@@ -15,6 +15,8 @@
     --fontcolor-quote: #1F2937;
     
     --btncolor-blue: #3882F6;
+    --btncolor-blue-hover: #2053a5;
+    --btncolor-blue-active: #153870;
 
     --fontsize-secondary: 18px;
     --fontsize-header: 24px;
@@ -142,4 +144,12 @@ main {
     border: 2px solid white;
 }
 
+.section-hero__text-container button:hover{
+    cursor: pointer;
+    background-color: var(--btncolor-blue-hover)
+}
+
+.section-hero__text-container button:active {
+    background-color: var(--btncolor-blue-active);
+}
     
