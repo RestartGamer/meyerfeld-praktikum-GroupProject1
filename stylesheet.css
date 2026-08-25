@@ -3,11 +3,16 @@
     padding: 0;
 }
 
+span {
+    white-space: nowrap;
+}
+
 :root {
     font-family: 'Karla', sans-serif;
 
     --bgcolor-dark: #1F2937;
     --bgcolor-quote: #E5E7EB;
+    --bgcolor-blue: #3882F6;
 
     --fontcolor-primary: black;
     --fontcolor-secondary: #E5E7EB;
@@ -137,7 +142,7 @@ main {
     font-weight: var(--fontweight-regular);
 }
 
-.section-hero__text-container button {
+#download-button {
     appearance: none;
     font: inherit;
     color: var(--fontcolor-secondary);
@@ -148,12 +153,12 @@ main {
     border: 2px solid white;
 }
 
-.section-hero__text-container button:hover {
+#download-button:hover {
     cursor: pointer;
     background-color: var(--btncolor-blue-hover)
 }
 
-.section-hero__text-container button:active {
+#download-button:active {
     background-color: var(--btncolor-blue-active);
 }
 
@@ -232,3 +237,47 @@ main {
     align-self: flex-end;
 }
 
+.section-cta {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 71px;
+    padding-block: 52px;
+    box-sizing: border-box;
+}
+
+.section-cta article {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bgcolor-blue);
+    border-radius: 4px;
+    padding-inline: 52px;
+    padding-block: 33px;
+    box-sizing: border-box;
+
+}
+
+.section-cta__text-container {
+    display:flex;
+    flex-direction: column;
+    row-gap: 10px;
+    max-width: 344px;
+}
+
+.section-cta__text-container h3,
+.section-cta__text-container p {
+    color: var(--fontcolor-secondary);
+}
+
+.section-cta__text-container h3 {
+    font-size: var(--fontsize-secondary);
+    font-weight: var(--fontweight-extrabold);
+}
+
+.section-cta__text-container p {
+    font-size: var(--fontsize-secondary);
+    font-weight: var(--fontweight-regular);
+}
