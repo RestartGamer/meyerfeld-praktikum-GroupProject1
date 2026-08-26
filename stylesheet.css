@@ -21,7 +21,8 @@ a {
 }
 
 :root {
-  font-family: "Roboto", sans-serif;
+    font-family: 'Roboto', sans-serif;
+    --fontfamily-button: 'Inter', sans-serif;
 
   --bgcolor-dark: #1f2937;
   --bgcolor-quote: #e5e7eb;
@@ -340,9 +341,9 @@ main {
 }
 
 #download-button span {
-  font-family: "Roboto", sans-serif;
-  font-size: var(--fontsize-button);
-  color: var(--fontcolor-secondary);
+    font-family: var(--fontfamily-button);
+    font-size: var(--fontsize-button);
+    color: var(--fontcolor-secondary);
 }
 
 #download-button:hover {
