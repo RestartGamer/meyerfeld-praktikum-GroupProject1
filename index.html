@@ -1,179 +1,179 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylesheet.css" />
 
-    <link rel="stylesheet" href="./stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Homepage</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav>
-            <div class="nav-content">
-                <a href="./index.html">
-                    <picture>
-                        <source srcset="./assets/default/logoImage2.webp">
-                        <img src="./assets/fallback/logoImage2.png" alt="Brand logo">
-                    </picture>
-                </a>
+      <nav>
+        <div class="nav-content">
+          <a href="./index.html">
+            <picture>
+              <source srcset="./assets/default/logoImage2.webp" />
+              <img src="./assets/fallback/logoImage2.png" alt="Brand logo" />
+            </picture>
+          </a>
 
-                <ul class="nav-content__options">
-                    <li>
-                        <a href="./index.html">
-                            <p>
-                                Home
-                            </p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./ourStory.html">
-                            <p>
-                                Our Story
-                            </p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href=".contactUs.html">
-                            <p>
-                                Contact Us
-                            </p>
-                        </a>
-                    </li>
-                </ul>
-                <input type="checkbox" id="ham-toggle" class="ham-toggle">
+          <ul class="nav-content__options">
+            <li>
+              <a href="./index.html">
+                <p>Home</p>
+              </a>
+            </li>
+            <li>
+              <a href="./ourStory.html">
+                <p>Our Story</p>
+              </a>
+            </li>
+            <li>
+              <a href="./contactUs.html">
+                <p>Contact Us</p>
+              </a>
+            </li>
+          </ul>
+          <input type="checkbox" id="ham-toggle" class="ham-toggle" />
 
-                <label for="ham-toggle" class="ham-btn-mobile">
-                    <picture>
-                        <source srcset="./assets/default/hamburgerIcon.webp">
-                        <img src="./assets/fallback/hamburgerIcon.png" alt="Menu">
-                    </picture>
-                </label>
-                <div class="ham-btn-mobile__dropdown-container">
-                    <ul class="ham-btn-mobile__dropdown">
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="./ourStory.html">Our Story</a></li>
-                        <li><a href="./contactUs.html">Contact Us</a></li>
-                    </ul>
-                </div>
-
-
-
-            </div>
-
-        </nav>
-
+          <label for="ham-toggle" class="ham-btn-mobile">
+            <picture>
+              <source srcset="./assets/default/hamburgerIcon.webp" />
+              <img src="./assets/fallback/hamburgerIcon.png" alt="Menu" />
+            </picture>
+          </label>
+          <div class="ham-btn-mobile__dropdown-container">
+            <ul class="ham-btn-mobile__dropdown">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./ourStory.html">Our Story</a></li>
+              <li><a href="./contactUs.html">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <main>
-        <section class="section-hero">
-            <article>
-                <div class="section-hero__text-container">
-                    <h1>HabitFlow</h1>
-                    <p>Track your routines, monitor your progress, and stay motivated with streaks, reminders, rewards,
-                        and clear statistics. HabitFlow helps you stay consistent, understand your progress, and build
-                        better habits—all in one simple and easy-to-use habit tracker.</p>
-                    <button id="download-button" type="button" onclick="alert('Thank you for downloading HabitFlow!')">
-                        <span>Download for Windows</span>
-                    </button>
-                </div>
-                <picture>
-                    <source srcset="./assets/default/mainProductImage.webp">
-                    <img src="./assets/fallback/mainProductImage.png"
-                        alt="picture of the HabitFlow app on a smartphone">
-                </picture>
-            </article>
-
-        </section>
-        <section class="section-features">
-            <h2>What we bring to the table!</h2>
-            <div class="section-features__content">
-
-                <article>
-                    <picture>
-                        <source srcset="./assets/default/featureIconTasks.webp">
-                        <img src="./assets/fallback/featureIconTasks.png" alt="icon of notepad">
-                    </picture>
-                    <h3>
-                        Habits & Tasks
-                    </h3>
-                    <p>
-                        Build daily routines and keep track of what you complete.
-                    </p>
-                </article>
-                <article>
-                    <picture>
-                        <source srcset="./assets/default/featureIconStatistics.webp">
-                        <img src="./assets/fallback/featureIconStatistics.png" alt="icon of notepad">
-                    </picture>
-                    <h3>
-                        Statistics
-                    </h3>
-                    <p>
-                        See your progress at a glance with simple, clear insights.
-                    </p>
-                </article>
-                <article>
-                    <picture>
-                        <source srcset="./assets/default/featureIconStreak.webp">
-                        <img src="./assets/fallback/featureIconStreak.png" alt="icon of notepad">
-                    </picture>
-                    <h3>
-                        Reward System
-                    </h3>
-                    <p>
-                        Stay consistent, build streaks, and celebrate your progress.
-                    </p>
-                </article>
-                <article>
-                    <picture>
-                        <source srcset="./assets/default/featureIconNotifications.webp">
-                        <img src="./assets/fallback/featureIconNotifications.png" alt="icon of notepad">
-                    </picture>
-                    <h3>
-                        Notifications
-                    </h3>
-                    <p>
-                        Plan your habits and get reminders so you stay on track.
-                    </p>
-                </article>
-            </div>
-        </section>
-        <section class="section-quotes">
-            <article>
-                <p>
-                    “Simple, motivating, and easy to use. HabitFlow keeps me consistent without making habit tracking
-                    feel like work.”
-                </p>
-                <span>
-                    <strong>— Jamie R.</strong>
-                </span>
-            </article>
-        </section>
-        <section class="section-cta">
-            <article>
-                <div class="section-cta__text-container">
-                    <h3>Start Your Habit Journey Today</h3>
-                    <p>Download HabitFlow and take the first step toward better routines and lasting progress.</p>
-                </div>
-                <button id="download-button" type="button" onclick="alert('Thank you for downloading HabitFlow!')">
-                    <span>Download Now</span>
-                </button>
-            </article>
-        </section>
+      <section class="section-hero">
+        <article>
+          <div class="section-hero__text-container">
+            <h1>HabitFlow</h1>
+            <p>
+              Track your routines, monitor your progress, and stay motivated
+              with streaks, reminders, rewards, and clear statistics. HabitFlow
+              helps you stay consistent, understand your progress, and build
+              better habits—all in one simple and easy-to-use habit tracker.
+            </p>
+            <button
+              id="download-button"
+              type="button"
+              onclick="alert('Thank you for downloading HabitFlow!')"
+            >
+              <span>Download for Windows</span>
+            </button>
+          </div>
+          <picture>
+            <source srcset="./assets/default/mainProductImage.webp" />
+            <img
+              src="./assets/fallback/mainProductImage.png"
+              alt="picture of the HabitFlow app on a smartphone"
+            />
+          </picture>
+        </article>
+      </section>
+      <section class="section-features">
+        <h2>What we bring to the table!</h2>
+        <div class="section-features__content">
+          <article>
+            <picture>
+              <source srcset="./assets/default/featureIconTasks.webp" />
+              <img
+                src="./assets/fallback/featureIconTasks.png"
+                alt="icon of notepad"
+              />
+            </picture>
+            <h3>Habits & Tasks</h3>
+            <p>Build daily routines and keep track of what you complete.</p>
+          </article>
+          <article>
+            <picture>
+              <source srcset="./assets/default/featureIconStatistics.webp" />
+              <img
+                src="./assets/fallback/featureIconStatistics.png"
+                alt="icon of notepad"
+              />
+            </picture>
+            <h3>Statistics</h3>
+            <p>See your progress at a glance with simple, clear insights.</p>
+          </article>
+          <article>
+            <picture>
+              <source srcset="./assets/default/featureIconStreak.webp" />
+              <img
+                src="./assets/fallback/featureIconStreak.png"
+                alt="icon of notepad"
+              />
+            </picture>
+            <h3>Reward System</h3>
+            <p>Stay consistent, build streaks, and celebrate your progress.</p>
+          </article>
+          <article>
+            <picture>
+              <source srcset="./assets/default/featureIconNotifications.webp" />
+              <img
+                src="./assets/fallback/featureIconNotifications.png"
+                alt="icon of notepad"
+              />
+            </picture>
+            <h3>Notifications</h3>
+            <p>Plan your habits and get reminders so you stay on track.</p>
+          </article>
+        </div>
+      </section>
+      <section class="section-quotes">
+        <article>
+          <p>
+            “Simple, motivating, and easy to use. HabitFlow keeps me consistent
+            without making habit tracking feel like work.”
+          </p>
+          <span>
+            <strong>— Jamie R.</strong>
+          </span>
+        </article>
+      </section>
+      <section class="section-cta">
+        <article>
+          <div class="section-cta__text-container">
+            <h3>Start Your Habit Journey Today</h3>
+            <p>
+              Download HabitFlow and take the first step toward better routines
+              and lasting progress.
+            </p>
+          </div>
+          <button
+            id="download-button"
+            type="button"
+            onclick="alert('Thank you for downloading HabitFlow!')"
+          >
+            <span>Download Now</span>
+          </button>
+        </article>
+      </section>
     </main>
 
     <footer>
-        <span>Copyright ™</span>
+      <span>Copyright ™</span>
     </footer>
-</body>
-
+  </body>
 </html>

@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pricing — Header Logo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="wrap header-inner">
+        <div class="logo">Header Logo</div>
+        <button
+          class="nav-toggle"
+          aria-label="Toggle menu"
+          onclick="document.querySelector('nav ul').classList.toggle('open')"
+        >
+          &#9776;
+        </button>
+        <nav>
+          <ul>
+            <li><a href="index.html">Header Link One</a></li>
+            <li><a href="about.html">Header Link Two</a></li>
+            <li><a href="pricing.html" aria-current="page">Pricing</a></li>
+            <li><a href="contact.html">Header Link Three</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="page-hero">
+      <h1>Simple, honest pricing</h1>
+      <p>
+        Pick the plan that fits. Upgrade, downgrade, or cancel whenever you want
+        — no surprises.
+      </p>
+    </section>
+
+    <section class="pricing">
+      <div class="pricing-intro">
+        <h2>Plans for every stage</h2>
+        <p>
+          All plans include the core product. Higher tiers add more usage,
+          support, and team features.
+        </p>
+      </div>
+
+      <div class="pricing-grid">
+        <div class="price-card">
+          <h3>Starter</h3>
+          <div class="price">$0<span>/month</span></div>
+          <p class="plan-desc">
+            For getting a feel for things before you commit.
+          </p>
+          <ul>
+            <li>1 project</li>
+            <li>Community support</li>
+            <li>Basic analytics</li>
+            <li>1 team member</li>
+          </ul>
+          <a
+            href="contact.html"
+            class="btn btn-outline"
+            style="border-color: var(--blue); color: var(--blue)"
+            >Get started</a
+          >
+        </div>
+
+        <div class="price-card featured">
+          <span class="price-badge">Most popular</span>
+          <h3>Pro</h3>
+          <div class="price">$29<span>/month</span></div>
+          <p class="plan-desc">
+            For individuals and small teams who are moving fast.
+          </p>
+          <ul>
+            <li>Unlimited projects</li>
+            <li>Priority support</li>
+            <li>Advanced analytics</li>
+            <li>Up to 10 team members</li>
+            <li>Custom integrations</li>
+          </ul>
+          <a href="contact.html" class="btn">Get started</a>
+        </div>
+
+        <div class="price-card">
+          <h3>Enterprise</h3>
+          <div class="price">Custom</div>
+          <p class="plan-desc">
+            For larger teams that need more control and support.
+          </p>
+          <ul>
+            <li>Everything in Pro</li>
+            <li>Dedicated account manager</li>
+            <li>Custom contracts &amp; SLAs</li>
+            <li>Unlimited team members</li>
+            <li>Single sign-on (SSO)</li>
+          </ul>
+          <a
+            href="contact.html"
+            class="btn btn-outline"
+            style="border-color: var(--blue); color: var(--blue)"
+            >Contact sales</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="faq">
+      <div class="faq-inner">
+        <h2>Questions people ask</h2>
+        <div class="faq-item">
+          <h4>Can I change plans later?</h4>
+          <p>
+            Yes. You can upgrade or downgrade at any time, and billing is
+            prorated automatically.
+          </p>
+        </div>
+        <div class="faq-item">
+          <h4>Is there a free trial on Pro?</h4>
+          <p>
+            Every paid plan starts with a 14-day free trial. No credit card
+            required to start.
+          </p>
+        </div>
+        <div class="faq-item">
+          <h4>What payment methods do you accept?</h4>
+          <p>
+            All major credit cards, and invoicing for Enterprise customers on
+            annual plans.
+          </p>
+        </div>
+        <div class="faq-item">
+          <h4>Do you offer discounts for nonprofits or students?</h4>
+          <p>
+            Yes — reach out through the contact page and we'll get you set up
+            with a discounted plan.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-wrap">
+      <div class="cta">
+        <div class="cta-text">
+          <h3>Still not sure which plan?</h3>
+          <p>Talk to us and we'll help you find the right fit.</p>
+        </div>
+        <a href="contact.html" class="btn btn-outline">Contact us</a>
+      </div>
+    </section>
+
+    <footer>
+      <p>Copyright &copy; 2026 Header Logo. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
