@@ -225,16 +225,16 @@ nav {
 
     list-style: none;
 
-    padding-left: 30px;
-    padding-right: 60px;
-    padding-block: 30px;
+    padding-left: 50px;
+    padding-right: 45px;
+    padding-block: 40px;
 
     box-sizing: border-box;
 
     display: flex;
     flex-direction: column;
 
-    gap: 10px;
+    gap: 13px;
 
     transform: translateY(-100%);
 
@@ -244,6 +244,7 @@ nav {
 .ham-btn-mobile__dropdown li a {
     text-decoration: none;
     color: var(--fontcolor-secondary);
+    font-size: var(--fontsize-button);
 }
 
 
