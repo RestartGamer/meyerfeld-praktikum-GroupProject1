@@ -22,7 +22,8 @@ a {
 }
 
 :root {
-    font-family: 'Karla', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    --fontfamily-button: 'Inter', sans-serif;
 
     --bgcolor-dark: #1F2937;
     --bgcolor-quote: #E5E7EB;
@@ -358,7 +359,7 @@ main {
 }
 
 #download-button span {
-    font-family: 'inter', sans-serif;
+    font-family: var(--fontfamily-button);
     font-size: var(--fontsize-button);
     color: var(--fontcolor-secondary);
 }
