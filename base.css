@@ -94,6 +94,7 @@ header {
     top: 0;
 
     background-color: var(--bgcolor-dark);
+    z-index: 2;
 
 }
 
