@@ -290,3 +290,11 @@ footer span {
     font-size: var(--fontsize-footer-small);
     font-weight: var(--fontweight-light);
 }
+
+/* MAIN */
+
+main {
+    width: 100%;
+
+    --padding-inline: 10%;
+}
