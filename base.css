@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+span,
+h1,
+h2,
+h3,
+a {
+    white-space: nowrap;
+}
+
+/* SM */
+@media (max-width: 600px) {
+
+    h1,
+    h2,
+    h3 {
+        white-space: wrap;
+    }
+}
+
+:root {
+    font-family: 'Roboto', sans-serif;
+    --fontfamily-button: 'Inter', sans-serif;
+
+    --bgcolor-dark: #1F2937;
+    --bgcolor-quote: #E5E7EB;
+    --bgcolor-blue: #3882F6;
+    --bgcolor-default: white;
+
+    --fontcolor-primary: black;
+    --fontcolor-secondary: #E5E7EB;
+    --fontcolor-hero: #F9FAF8;
+    --fontcolor-header: #F9FAF8;
+    --fontcolor-information: #1F2937;
+    --fontcolor-quote: #1F2937;
+
+    --btncolor-blue: #3882F6;
+    --btncolor-blue-hover: #2053a5;
+    --btncolor-blue-active: #153870;
+
+    --btncolor-blue2: #1F2937;
+    --btncolor-blue2-hover: #3a4d68;
+    --btncolor-blue2-active: #090c11;
+
+    --fontsize-card-h: 24px;
+    --fontsize-card-p: 18px;
+    --fontsize-button: 18px;
+    --fontsize-footer-small: 12px;
+    --fontsize-secondary: 18px;
+    --fontsize-header: 24px;
+    --fontsize-heading: 36px;
+    --fontsize-information: 36px;
+    --fontsize-quote: 36px;
+    --fontsize-hero: 48px;
+
+    --fontweight-light: 300;
+    --fontweight-regular: 400;
+    --fontweight-extrabold: 700;
+
+    font-weight: 400;
+}
