@@ -1,19 +1,10 @@
 /* ===== Contact page layout ===== */
-body {
-  color: var(--fontcolor-primary);
-  background: var(--bgcolor-default);
-}
 
 button,
 input,
 textarea,
 select {
   font: inherit;
-}
-
-main {
-  background: var(--bgcolor-default);
-  padding-inline: var(--padding-inline)
 }
 
 .wrap {
@@ -24,7 +15,8 @@ main {
 
 .page-hero {
   background: var(--bgcolor-dark);
-  padding: 64px 24px;
+  padding-inline: var(--padding-inline);
+  padding-block: 78px;
   text-align: center;
 }
 
@@ -63,48 +55,13 @@ main {
 }
 
 .contact-wrap {
+  background-color: var(--bgcolor-default);
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 96px 24px;
+  padding: var(--padding-inline);
   display: flex;
   gap: 64px;
   flex-wrap: wrap;
-}
-
-@media (max-width: 600px) {
-  .page-hero {
-    padding: 48px 20px;
-  }
-
-  .page-hero h1 {
-    font-size: clamp(2.1rem, 7vw, 3rem);
-  }
-
-  .page-hero p {
-    font-size: 1rem;
-  }
-
-  .contact-wrap {
-    padding: 48px 20px;
-    gap: 32px;
-  }
-
-  .contact-form,
-  .contact-info {
-    flex-basis: 100%;
-    min-width: 0;
-  }
-
-  .field input,
-  .field textarea,
-  .btn {
-    width: 100%;
-  }
-
-  .btn {
-    display: block;
-    text-align: center;
-  }
 }
 
 .contact-form {
@@ -226,101 +183,4 @@ main {
   font-size: 15px;
   color: var(--fontcolor-information);
   line-height: 1.5;
-}
-
-footer {
-  background: var(--bgcolor-dark);
-  padding: 32px 24px;
-  text-align: center;
-}
-
-footer p {
-  color: var(--fontcolor-secondary);
-  font-size: var(--fontsize-footer-small);
-}
-
-/* ===== Shared structure consistency ===== */
-header {
-  background: var(--bgcolor-dark);
-}
-
-.header-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 24px;
-}
-
-.logo {
-  font-size: var(--fontsize-header);
-  font-weight: var(--fontweight-extrabold);
-  color: var(--fontcolor-header);
-  letter-spacing: -0.02em;
-}
-
-nav ul {
-  display: flex;
-  gap: 32px;
-}
-
-nav a {
-  font-size: var(--fontsize-header);
-  color: var(--fontcolor-secondary);
-  transition: color 0.15s ease;
-}
-
-nav a:hover,
-nav a[aria-current="page"] {
-  color: var(--fontcolor-header);
-}
-
-.nav-toggle {
-  display: none;
-  background: none;
-  border: none;
-  color: var(--fontcolor-header);
-  font-size: 28px;
-  cursor: pointer;
-}
-
-@media (max-width: 800px) {
-  nav ul {
-    gap: 20px;
-  }
-}
-
-@media (max-width: 600px) {
-  nav ul {
-    position: absolute;
-    top: 72px;
-    left: 0;
-    right: 0;
-    background: var(--dark);
-    flex-direction: column;
-    align-items: center;
-    padding: 16px 0;
-    gap: 16px;
-    display: none;
-  }
-
-  nav ul.open {
-    display: flex;
-  }
-
-  .nav-toggle {
-    display: block;
-  }
-
-  .header-inner {
-    position: relative;
-  }
-}
-
-/* ===== Focus states ===== */
-a:focus-visible,
-button:focus-visible,
-input:focus-visible,
-textarea:focus-visible {
-  outline: 2px solid var(--bgcolor-blue);
-  outline-offset: 2px;
 }
