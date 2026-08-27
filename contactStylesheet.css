@@ -13,6 +13,7 @@ select {
 
 main {
   background: var(--bgcolor-default);
+  padding-inline: var(--padding-inline)
 }
 
 .wrap {
