@@ -1,0 +1,183 @@
+/* TIMELINE */
+
+.section-timeline {
+  --timeline-icon-size: clamp(5rem, 10vw, 7.875rem);
+  --timeline-icon-radius: 1.25rem;
+  --timeline-line-width: 0.25rem;
+  --timeline-dot-size: 1.25rem;
+  --timeline-item-height: clamp(9.5rem, 16vw, 12.8rem);
+  --timeline-content-gap: clamp(1.5rem, 5vw, 4.5rem);
+  --timeline-section-gap: clamp(2.5rem, 5vw, 4.5rem);
+  --timeline-section-padding: clamp(3rem, 6vw, 5.5rem);
+
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-inline: var(--padding-inline);
+  padding-block: var(--timeline-section-padding);
+  box-sizing: border-box;
+  gap: var(--timeline-section-gap);
+  background-color: var(--bgcolor-default);
+}
+
+.section-timeline h2 {
+  margin: 0;
+  color: var(--fontcolor-primary);
+  font-size: var(--fontsize-heading);
+  font-weight: var(--fontweight-extrabold);
+  text-align: center;
+}
+
+/* TIMELINE CONTENT */
+
+.section-timeline__content {
+  position: relative;
+  width: 100%;
+  max-width: 48rem;
+  display: flex;
+  flex-direction: column;
+  margin-inline: auto;
+}
+
+/* VERTICAL LINE */
+
+.section-timeline__content::before {
+  content: "";
+  position: absolute;
+  top: calc(var(--timeline-icon-size) / 2);
+  bottom: calc(var(--timeline-icon-size) / 2);
+  left: calc((var(--timeline-icon-size) - var(--timeline-line-width)) / 2);
+  width: var(--timeline-line-width);
+  border-radius: var(--timeline-line-width);
+  background-color: var(--btncolor-blue);
+  z-index: 0;
+}
+
+/* TIMELINE ITEM */
+
+.section-timeline__content article {
+  position: relative;
+  width: 100%;
+  min-height: var(--timeline-item-height);
+  display: flex;
+  align-items: center;
+  gap: var(--timeline-content-gap);
+  margin: 0;
+  padding: 0;
+}
+
+/* TIMELINE DOT */
+
+.section-timeline__content article::after {
+  content: "";
+  position: absolute;
+  left: calc((var(--timeline-icon-size) - var(--timeline-dot-size)) / 2);
+  bottom: calc(var(--timeline-dot-size) / -2);
+  width: var(--timeline-dot-size);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: var(--btncolor-blue);
+  z-index: 3;
+}
+
+.section-timeline__content article:last-child::after {
+  display: none;
+}
+
+/* IMAGE */
+
+.section-timeline__content article picture {
+  position: relative;
+  flex: 0 0 var(--timeline-icon-size);
+  width: var(--timeline-icon-size);
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  box-sizing: border-box;
+  border: var(--timeline-line-width) solid var(--btncolor-blue);
+  border-radius: var(--timeline-icon-radius);
+  background-color: var(--bgcolor-default);
+  overflow: hidden;
+  z-index: 2;
+}
+
+.section-timeline__content article img {
+  display: block;
+  width: 92%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* TEXT */
+
+.section-timeline__text {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  gap: 0.25rem;
+}
+
+.section-timeline__content article h3 {
+  margin: 0;
+  color: var(--fontcolor-primary);
+  font-size: var(--fontsize-card-h);
+  font-weight: var(--fontweight-extrabold);
+  line-height: 1.2;
+  text-align: left;
+}
+
+.section-timeline__content article p {
+  width: 100%;
+  max-width: 29rem;
+  margin: 0;
+  color: var(--fontcolor-primary);
+  font-size: var(--fontsize-card-p);
+  font-weight: var(--fontweight-regular);
+  line-height: 1.4;
+  text-align: left;
+}
+
+/* TABLET */
+
+@media (max-width: 48rem) {
+  .section-timeline {
+    --timeline-icon-size: clamp(5rem, 14vw, 6.5rem);
+    --timeline-dot-size: 1rem;
+    --timeline-item-height: clamp(8.5rem, 22vw, 11rem);
+    --timeline-content-gap: clamp(1.5rem, 5vw, 2.5rem);
+    --timeline-section-gap: 3rem;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 32.5rem) {
+  .section-timeline {
+    --timeline-icon-size: clamp(4rem, 20vw, 5rem);
+    --timeline-line-width: 0.1875rem;
+    --timeline-dot-size: 0.875rem;
+    --timeline-icon-radius: 0.875rem;
+    --timeline-item-height: clamp(8rem, 36vw, 9.5rem);
+    --timeline-content-gap: clamp(1rem, 5vw, 1.5rem);
+    --timeline-section-gap: 2.5rem;
+    --timeline-section-padding: 2.75rem;
+  }
+
+  .section-timeline__content article h3 {
+    font-size: clamp(1rem, 4.5vw, 1.125rem);
+  }
+
+  .section-timeline__content article p {
+    font-size: clamp(0.875rem, 3.8vw, 1rem);
+  }
+}

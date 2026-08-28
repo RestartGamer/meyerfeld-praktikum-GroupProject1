@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" href="./base.css">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./ourstory.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Our Story</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="nav-content">
+          <a href="./index.html">
+            <picture>
+              <source srcset="./assets/default/logoImage2.webp" />
+              <img src="./assets/fallback/logoImage2.png" alt="Brand logo" />
+            </picture>
+          </a>
+
+          <ul class="nav-content__options">
+            <li>
+              <a href="./index.html">
+                <p>Home</p>
+              </a>
+            </li>
+            <li>
+              <a href="./ourStory.html">
+                <p>Our Story</p>
+              </a>
+            </li>
+            <li>
+              <a href=".contactUs.html">
+                <p>Contact Us</p>
+              </a>
+            </li>
+          </ul>
+          <input type="checkbox" id="ham-toggle" class="ham-toggle" />
+
+          <label for="ham-toggle" class="ham-btn-mobile">
+            <picture>
+              <source srcset="./assets/default/hamburgerIcon.webp" />
+              <img src="./assets/fallback/hamburgerIcon.png" alt="Menu" />
+            </picture>
+          </label>
+          <div class="ham-btn-mobile__dropdown-container">
+            <ul class="ham-btn-mobile__dropdown">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./ourStory.html">Our Story</a></li>
+              <li><a href="./contactUs.html">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section-hero">
+        <article>
+          <div class="section-hero__text-container">
+            <h1>Our Story</h1>
+            <h2>From a simple idea to better daily habits</h2>
+            <p>
+              HabitFlow started with one goal: to make building good habits simple, motivating, and easy to understand.
+            </p>
+        </article>
+      </section>
+<section class="section-timeline">
+  <h2>Our Journey</h2>
+
+  <div class="section-timeline__content">
+    <article>
+      <picture>
+        <source
+          srcset="./assets/default/featureIconNotes.webp"
+          type="image/webp"
+        />
+        <img
+          src="./assets/fallback/featureIconNotes.png"
+          alt="Illustration representing the HabitFlow idea"
+        />
+      </picture>
+
+      <div class="section-timeline__text">
+        <h3>2023 - The Idea</h3>
+        <p>
+          HabitFlow began as a simple idea to make everyday habits easier to
+          organize and track.
+        </p>
+      </div>
+    </article>
+
+    <article>
+      <picture>
+        <source
+          srcset="./assets/default/featureIconBulb.webp"
+          type="image/webp"
+        />
+        <img
+          src="./assets/fallback/featureIconBulb.png"
+          alt="Illustration representing the first prototype"
+        />
+      </picture>
+
+      <div class="section-timeline__text">
+        <h3>2024 - The First Prototype</h3>
+        <p>
+          Build daily routines and keep track of what you complete.
+        </p>
+      </div>
+    </article>
+
+    <article>
+      <picture>
+        <source
+          srcset="./assets/default/featureIconGrow.webp"
+          type="image/webp"
+        />
+        <img
+          src="./assets/fallback/featureIconGrow.png"
+          alt="Illustration representing HabitFlow growth"
+        />
+      </picture>
+
+      <div class="section-timeline__text">
+        <h3>2025 - Growing the Idea</h3>
+        <p>
+          Build daily routines and keep track of what you complete.
+        </p>
+      </div>
+    </article>
+
+    <article>
+      <picture>
+        <source
+          srcset="./assets/default/featureIconDashboard.webp"
+          type="image/webp"
+        />
+        <img
+          src="./assets/fallback/featureIconDashboard.png"
+          alt="Illustration representing HabitFlow today"
+        />
+      </picture>
+
+      <div class="section-timeline__text">
+        <h3>2026 - HabitFlow Today!</h3>
+        <p>
+          Build daily routines and keep track of what you complete.
+        </p>
+      </div>
+    </article>
+  </div>
+</section>
+      <section class="section-quotes">
+        <article>
+          <p>
+            “HabitFlow helps me turn small daily goals into routines I can actually stick with.
+             Seeing my progress keeps me motivated.”
+          </p>
+          <span>
+            <strong>— Taylor M.</strong>
+          </span>
+        </article>
+      </section>
+      <section class="section-cta">
+        <article>
+          <div class="section-cta__text-container">
+            <h3>Start Your Habit Journey Today</h3>
+            <p>
+              Download HabitFlow and take the first step toward better routines
+              and lasting progress.
+            </p>
+          </div>
+          <button
+            id="download-button"
+            type="button"
+            onclick="alert('Thank you for downloading HabitFlow!')"
+          >
+            <span>Download Now</span>
+          </button>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <span>Copyright ™</span>
+    </footer>
+  </body>
+</html>
