@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./base.css" />
+    <link rel="stylesheet" href="./contactStylesheet.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-content">
+          <a href="./index.html">
+            <picture>
+              <source srcset="./assets/default/logoImage2.webp" />
+              <img src="./assets/fallback/logoImage2.png" alt="Brand logo" />
+            </picture>
+          </a>
+
+          <ul class="nav-content__options">
+            <li>
+              <a href="./index.html">
+                <p>Home</p>
+              </a>
+            </li>
+            <li>
+              <a href="./ourStory.html">
+                <p>Our Story</p>
+              </a>
+            </li>
+            <li>
+              <a href="./contactUs.html">
+                <p>Contact Us</p>
+              </a>
+            </li>
+          </ul>
+
+          <input type="checkbox" id="ham-toggle" class="ham-toggle" />
+
+          <label for="ham-toggle" class="ham-btn-mobile">
+            <picture>
+              <source srcset="./assets/default/hamburgerIcon.webp" />
+              <img src="./assets/fallback/hamburgerIcon.png" alt="Menu" />
+            </picture>
+          </label>
+          <div class="ham-btn-mobile__dropdown-container">
+            <ul class="ham-btn-mobile__dropdown">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./ourStory.html">Our Story</a></li>
+              <li><a href="./contactUs.html">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <h1>Get in touch</h1>
+        <p>
+          Have a question or want to work together? Fill out the form below or
+          reach us directly and we'll get back to you shortly.
+        </p>
+        <a href="#message-form" class="page-hero__cta">Message us</a>
+      </section>
+
+      <section class="contact-wrap">
+        <div class="contact-form">
+          <h2>Send a message</h2>
+          <form id="message-form">
+            <div class="field">
+              <label for="name">Full name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Jane Smith"
+                required
+              />
+            </div>
+            <div class="field">
+              <label for="email">Email address</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="jane@example.com"
+                required
+              />
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Tell us a bit about what you need..."
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn">Send message</button>
+          </form>
+        </div>
+
+        <div class="contact-info">
+          <h2>Contact info</h2>
+          <div class="contact-info-item">
+            <div class="icon">&#9993;</div>
+            <div>
+              <h4>Email</h4>
+              <p>hello@headerlogo.com</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="icon">&#9742;</div>
+            <div>
+              <h4>Phone</h4>
+              <p>(555) 123-4567</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="icon">&#9873;</div>
+            <div>
+              <h4>Office</h4>
+              <p>123 Market Street, Suite 400<br />San Francisco, CA 94103</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>Copyright ™</span>
+    </footer>
+  </body>
+</html>
